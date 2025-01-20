@@ -29,7 +29,7 @@ public class PlatformCacheExample {
             acctMap = (Map<String,Map<Id,Account>>)orgPart.get(PARTITIONNAME);
             if (acctMap != null) {
                 System.debug(LoggingLevel.DEBUG,'>>>CACHED: MAP SIZE: ' + acctMap.size());
-				return acctMap;                
+		return acctMap;                
             }
         }        
         return null;
@@ -40,7 +40,7 @@ public class PlatformCacheExample {
         System.debug(LoggingLevel.DEBUG,'>>>CACHE ORGPART: ' + orgPart);
         
         if (orgPart != null && orgPart.contains(PARTITIONNAME)) {
-			return orgPart;
+		return orgPart;
         }        
         return null;
     }    
