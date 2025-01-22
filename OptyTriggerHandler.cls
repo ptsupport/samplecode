@@ -15,7 +15,7 @@ global class OptyTriggerHandler extends pform.TriggerHandler {
             // the following code is not bulkified to simplify the demo 
             String archiveResultStr = null;   
             archiveResultStr = (String) pform.Rules.evaluate('ArchiveOpportunity', oppList[0]);
-			      System.debug('>>>OptyTriggerHandler: ArchiveOpportunity RULES RESULT: ' + archiveResultStr);
+	    System.debug('>>>OptyTriggerHandler: ArchiveOpportunity RULES RESULT: ' + archiveResultStr);
             if (archiveResultStr != null && archiveResultStr.equalsIgnoreCase('Archive')) {
                 pform.ErrorHandler.logError('INFO', ':OptyTriggerHandler.beforeUpdate', 'Archive Result: ' + archiveResultStr);                 
             }
