@@ -1,0 +1,3 @@
+trigger OpportunityTrigger on Opportunity (before update) {
+    pform.TriggerHandler.run(Opportunity.sObjectType);
+}
